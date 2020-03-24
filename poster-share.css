@@ -1,0 +1,204 @@
+#fx_img .fa {
+    padding: 0 10px;
+    font-size: 16px
+}
+
+.poster-share {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999990;
+    perspective: 500px;
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+    overflow: auto
+}
+.share_card{
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.share_ok {
+    background: #fff;
+    z-index: 9;
+}
+
+.poster-share.poster-share_xs {
+    visibility: visible;
+    opacity: 1
+}
+
+.share_bj {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, #0d3064 10%, #2b0638 100%);
+    background: rgba(0, 0, 0, 0.6);
+    opacity: .9
+}
+
+.fx_h {
+    position: absolute;
+    color: #fff;
+    font-size: 38px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    width: 100%;
+    padding: 25px 45px
+}
+
+.fx_h span {
+    display: inline-block
+}
+
+.fx_h p:first-child {
+    border-bottom: 2px solid #fff
+}
+
+.fx_h p {
+    margin: 0;
+    text-align: center
+}
+
+.fx_img_ap {
+    display: block;
+    overflow: hidden;
+    margin: -2px;
+    height: 600px
+}
+
+.share_b h4 {
+    padding: 0 .5em;
+    line-height: 1.4em;
+    max-height: 2.8em;
+    border-left: 8px solid #10a1f0;
+    margin: .8em;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.fx_loading {
+    width: 100%;
+    padding: 6px;
+    text-align: center;
+    color: #fff;
+    background: #ff9550;
+    position: fixed;
+    z-index: 2;
+    opacity: .9;
+    transition: all 0.3s
+}
+
+.fx_loading .fa {
+    font-size: 15px;
+    width: 30px
+}
+
+.fx_db {
+    margin: 40px;
+    padding: 30px 40px;
+    border: 2px dashed #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fx_db .qrcode {
+    display: inline-block
+}
+
+.fx_db .qrcode canvas{
+width: 160px;
+    height: 160px;
+}
+.share_b>p {
+    margin: 1em;
+    word-break: break-all;
+    font-size: 30px;
+    color: #999;
+    height: 4.4em;
+    text-indent: 2em;
+    overflow: hidden;
+}
+
+.fx_h .fx_h p {
+    margin: 0;
+    text-align: center
+}
+
+.fx_logo {
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    width: 360px
+}
+.fx_logo h5{
+    font-size: 25px;
+}
+
+.fx_logo .logo {
+    float: none;
+    height: 100px
+}
+
+.fx_logo .logo img {
+    display: inline-block
+}
+
+.fx_logo h5 {
+    color: #888
+}
+
+.fx_img_tp {
+    max-width: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.share_b {
+    background: #fff;
+    width: 860px;
+    position: relative;
+    height: 1240px;
+    transition: all .3s;
+}
+
+.poster-share .icon-close {
+    position: fixed;
+    cursor: pointer;
+    right: 20px;
+    top: 40px;
+    color: #fff;
+    z-index: 1;
+    padding: 15px;
+    transition: all .3s;
+    font-size: 16px
+}
+
+@media (max-width:480px) {
+    .poster-share .icon-close {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #888;
+        text-align: center;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.44);
+        top: auto;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff
+    }
+}
